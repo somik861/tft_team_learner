@@ -1,6 +1,7 @@
 from PySide6.QtGui import QResizeEvent
 from PySide6.QtWidgets import QWidget
 
+from src.common.structs import Champion
 from src.gui.ui_ChampionSlot import Ui_ChamionSlot
 
 
@@ -17,3 +18,6 @@ class ChampionSlot(QWidget):
         self.resize(new_size, new_size)
         event.accept()
         super().resizeEvent(event)
+
+    def set_champion(self, champion: Champion) -> None:
+        pass
