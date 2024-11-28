@@ -1,0 +1,7 @@
+# ide
+.vs
+.vscode
+
+# artifacts
+__pycache__
+.mypy_cache
