@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TeamSelection</class>
+ <widget class="QWidget" name="TeamSelection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>544</width>
+    <height>271</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="row1Layout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="ChampionSlot" name="slot1" native="true"/>
+     </item>
+     <item>
+      <widget class="ChampionSlot" name="slot2" native="true"/>
+     </item>
+     <item>
+      <widget class="ChampionSlot" name="slot3" native="true"/>
+     </item>
+     <item>
+      <widget class="ChampionSlot" name="slot4" native="true"/>
+     </item>
+     <item>
+      <widget class="ChampionSlot" name="slot5" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="row2Layout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="ChampionSlot" name="slot6" native="true"/>
+     </item>
+     <item>
+      <widget class="ChampionSlot" name="slot7" native="true"/>
+     </item>
+     <item>
+      <widget class="ChampionSlot" name="slot8" native="true"/>
+     </item>
+     <item>
+      <widget class="ChampionSlot" name="slot9" native="true"/>
+     </item>
+     <item>
+      <widget class="ChampionSlot" name="slot10" native="true"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ChampionSlot</class>
+   <extends>QWidget</extends>
+   <header>src.gui.ChampionSlot</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

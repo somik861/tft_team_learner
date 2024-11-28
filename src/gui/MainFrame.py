@@ -10,3 +10,6 @@ class MainFrame(QWidget):
 
         self._ui = Ui_MainFrame()
         self._ui.setupUi(self)
+
+        self._ui.verticalLayout.setAlignment(
+            Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignHCenter)

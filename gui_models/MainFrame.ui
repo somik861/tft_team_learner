@@ -6,23 +6,57 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>646</width>
+    <height>432</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>TFT Team Learner</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
    <item>
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Hello world</string>
+    <widget class="TeamSelection" name="widget" native="true"/>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="ChampionPool" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>626</width>
+        <height>397</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TeamSelection</class>
+   <extends>QWidget</extends>
+   <header>src.gui.TeamSelection</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ChampionPool</class>
+   <extends>QWidget</extends>
+   <header>src.gui.ChampionPool</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
